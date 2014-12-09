@@ -130,10 +130,14 @@ public class GoogleTest extends TestCase {
 	    }
 
 	    public void testSimple() throws Exception {
-	        this.getDriver().get("http://www.google.com");
-	        assertEquals("Google", this.getDriver().getTitle());
-	        driver.findElement(By.name("q")).isDisplayed();
-	        driver.findElement(By.name("q")).sendKeys("Selenium");
+	        this.getDriver().get("http://demo.mynexia.com/");
+	        // assertEquals("Google", this.getDriver().getTitle());
+	       driver.findElement(By.id("login")).sendKeys("nexiatest");
+                driver.findElement(By.id("password")).sendKeys("Trane100");
+                driver.findElement(By.xpath(".//a[contains(text(),'Login')]")).click();
+                 System.out.println("Opened");
+                   Thread.sleep(5000);
+//driver.close();
 	//driver.getTitle();
 //	Thread.sleep(2000);
 	    }

@@ -135,6 +135,7 @@ public class GoogleTest extends TestCase {
 	        driver.findElement(By.name("q")).isDisplayed();
 	        driver.findElement(By.name("q")).sendKeys("Selenium");
 	//driver.getTitle();
+//	Thread.sleep(2000);
 	    }
 
 	    @Override
